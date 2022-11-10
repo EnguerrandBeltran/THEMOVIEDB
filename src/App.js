@@ -1,27 +1,25 @@
 import logo from './logo.svg';
 import Foaas from './Foaas';
+import { About } from './pages/About';
+import { Home } from './pages/Home';
+
 import './App.css';
+import { BrowserRouter, Routes, Route, Outlet, Link } from "react-router-dom";
 
 
-function App() {
+
+export default function App() {
 	fetch("https://foaas.com/off/Thomas/Enguerrand")
-	.then(response => response.json())
-	.then((data) => console.log(data));
+		.then(response => response.json())
+		.then((data) => console.log(data));
 	return (
-		<div className="App">
-			<header className="App-header">
-				<img src={logo} className="App-logo" alt="logo" />
-				<form>
-					<input type="text" name='nom1'placeholder='De'/>
- <br/>
-					<input type="text" name='nom2'placeholder='Pour'/>
-					<br/>
-					<input type="button" value='submit'onClick={Foaas}/>
-				</form>
-			</header>
+		<BrowserRouter>
+			<Routes>
+				<Route path="/" element={<Home />} />
+				<Route path="about" element={<About />} />
+			</Routes>
+		</BrowserRouter>
 
-
-		</div>
 	);
 }
 
@@ -29,7 +27,3 @@ function App() {
 
 
 
-
-
-
-export default App;
