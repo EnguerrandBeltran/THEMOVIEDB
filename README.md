@@ -71,7 +71,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 
 
-### Le Lien du cours 
+### Le Lien du cours
 ***
 
 https://docs.google.com/presentation/d/1MDKpy91nFg0pQcV-Sn3sCS_wVAhCCSaZOtG395sHxSw/edit#slide=id.g1237e88cbd3_0_13
