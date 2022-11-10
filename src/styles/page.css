@@ -1,3 +1,24 @@
 .navbar{
     display: flex;    
+    margin : 30px;
+}
+
+.navLink {
+    padding : 10px;
+    transition : 0.2s;
+}
+
+.enTete{
+
+        background: linear-gradient(#656ab0,#e8a1a2);
+        border-radius: 20px;
+        margin: 20px;
+}
+
+h1{
+    margin: 5px;
+}
+
+.lorem{
+    margin: 30px;
 }
