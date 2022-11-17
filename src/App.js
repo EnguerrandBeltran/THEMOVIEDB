@@ -1,5 +1,4 @@
 import logo from './logo.svg';
-import Foaas from './Foaas';
 import { About } from './pages/About';
 import { Home } from './pages/Home';
 
