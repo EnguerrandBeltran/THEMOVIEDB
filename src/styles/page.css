@@ -57,10 +57,15 @@ h1 {
 }
 
 .poster {
-	height: 350px;
-	width: 233px;
+	height: 100%;
+	width:100%;
 }
 
+.poster:hover {
+	height: 150%;
+	width: 150%;
+	transition: 0.5s;
+}
 .movies {
 	display: flex;
 	flex-flow: wrap;
