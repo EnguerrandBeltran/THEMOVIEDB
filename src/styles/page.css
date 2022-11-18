@@ -1,55 +1,81 @@
+.pageName {
+	display: block;
+	float: inline-start;
+	background-color: #ddd;
+	color: black;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+}
 
-.pageName{
-    display: block;
-float: inline-start;
-        background-color: #ddd;
-            color: black;
-            padding: 14px 16px;
-            text-decoration: none;
-            font-size: 17px;
+.navigation_bar {
+	display: block;
 }
-.navbar {
-    display: block;
-}
+
 .navLink {
-    float: inline-start;
-    padding : 10px;
-    transition : 0.2s;
+	float: inline-start;
+	padding: 10px;
+	transition: 0.2s;
 }
 
-.logo{
-    margin: 20px;
+.logo {
+	margin: 20px;
 }
 
-.navbar a{
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;}
-
-    .navbar a:hover{
-        background-color: #ddd;
-            color: black;
-    }
-
-.enTete{
-
-            background-color: #281f5e;
-overflow: hidden;
+.navigation_bar a {
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
 }
 
-h1{
-    margin: 5px;
+.navigation_bar a:hover {
+	background-color: #ddd;
+	color: black;
 }
 
-.lorem{
-    margin: 30px;
+.enTete {
+
+	background-color: #281f5e;
+	overflow: hidden;
 }
 
-.corps{
-    background-color: #3b3946;
-        position: fixed;
-            width: 100%;
-            height: 100%;
+h1 {
+	margin: 5px;
+}
+
+.lorem {
+	margin: 30px;
+}
+
+.corps {
+	background-color: #3b3946;
+
+	width: 100%;
+	height: 100%;
+}
+
+.poster {
+	height: 350px;
+	width: 233px;
+}
+
+.movies {
+	display: flex;
+	flex-flow: wrap;
+}
+
+.movie {
+	margin: 15px;
+	display: grid;
+	width: 233px;
+	margin-top: 4em;
+}
+
+
+
+.titre {
+	line-height: 1em;
+	min-height: 2em;
 }
