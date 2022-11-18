@@ -8,6 +8,7 @@ export function Home() {
 			<div className="navigation_bar">
 				<Link className="navLink" to="/">Home</Link>
 				<Link className="navLink" to="/About">About</Link>
+				
 			</div>
 		</div>
 			<div className="corps">

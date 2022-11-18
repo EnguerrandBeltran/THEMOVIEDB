@@ -33,13 +33,16 @@ const Movie = ({ movie }) => {
 				<Modal.Body>
 				Titre Original : {movie.original_title}
 					<br/>
+					<br/>
 					Langue : {movie.original_language}
+					<br/>
 					<br/>
 					Date de Sortie : {movie.release_date}
 					<br/>
+					<br/>
 					Résumé : {movie.overview}
-
-
+					<br/>
+					<br/>
 				</Modal.Body>
 				<Modal.Footer>
 					<Button variant="secondary" onClick={handleClose}>
