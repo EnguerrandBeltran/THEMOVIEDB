@@ -74,10 +74,11 @@ h1 {
 .movies {
 	display: flex;
 	flex-flow: wrap;
+	padding-left: 35px;
 }
 
 .movie {
-	margin: 15px;
+	margin: 10px;
 	display: grid;
 	width: 233px;
 	margin-top: 4em;
@@ -88,4 +89,15 @@ h1 {
 .titre {
 	line-height: 1em;
 	min-height: 2em;
+}
+
+
+.fromSearch{
+	display: inline-block;
+	padding: 7px;
+
+}
+
+.searchBar.form-control{
+	border-radius: 100px;
 }

@@ -6,9 +6,10 @@ export function About() {
 		<div>
 			<div className="enTete">
 				<img className="logo" src={LogoTMDB} alt="fireSpot" />
-				<div className="navbar">
+				<div className="navigation_bar">
 					<Link className="navLink" to="/">Home</Link>
 					<Link className="navLink" to="/About">About</Link>
+
 					
 				</div>
 				

@@ -1,6 +1,11 @@
 import React, { useState } from "react";
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
+import { Routes, Route, useNavigate } from 'react-router-dom';
+import Card from 'react-bootstrap/Modal';
+import ListGroup from 'react-bootstrap/Modal';
+
+
 
 
 
@@ -17,32 +22,52 @@ const Movie = ({ movie }) => {
 		console.log(movie);
 	}
 
+	const movieId = movie.id;
+
+
+	const navigate = useNavigate();
+
+	const navigateToMovie = () => {
+		navigate("/MoviePage", { state: {movieId} });
+	}
+
+	
 
 	return (
 		<div className="movie">
-			<img onClick={handleClick} className="poster" src={movie.poster_path
+			<img onMouseDown={navigateToMovie} className="poster" src={movie.poster_path
 				? "https://image.tmdb.org/t/p/original/" + movie.poster_path
 				: "./img/poster.jpg"
 			}
 				alt={`affiche ${movie.title}`}
 			/>
-			<Modal show={show} onHide={handleClose}>
+			
+			
+		</div>
+	);
+
+}
+
+export default Movie;
+
+/*
+<Modal show={show} onHide={handleClose}>
 				<Modal.Header closeButton>
 					<Modal.Title>{movie.title}</Modal.Title>
 				</Modal.Header>
 				<Modal.Body>
-				Titre Original : {movie.original_title}
-					<br/>
-					<br/>
+					Titre Original : {movie.original_title}
+					<br />
+					<br />
 					Langue : {movie.original_language}
-					<br/>
-					<br/>
+					<br />
+					<br />
 					Date de Sortie : {movie.release_date}
-					<br/>
-					<br/>
+					<br />
+					<br />
 					Résumé : {movie.overview}
-					<br/>
-					<br/>
+					<br />
+					<br />
 				</Modal.Body>
 				<Modal.Footer>
 					<Button variant="secondary" onClick={handleClose}>
@@ -50,9 +75,5 @@ const Movie = ({ movie }) => {
 					</Button>
 				</Modal.Footer>
 			</Modal>
-		</div>
-	);
 
-}
-
-export default Movie;
+*/
