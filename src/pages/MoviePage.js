@@ -36,6 +36,8 @@ export function MoviePage() {
 				<div className="navigation_bar">
 					<Link className="navLink" to="/">Home</Link>
 					<Link className="navLink" to="/About">About</Link>
+					<Link className="navLink" to="/OutNow">Out Now</Link>
+				<Link className="navLink" to="/Upcomming">Upcomming</Link>
 									</div>
 				
 			</div>

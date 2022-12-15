@@ -10,6 +10,7 @@
 
 .navigation_bar {
 	display: block;
+	height: 52px;
 }
 
 .navLink {
@@ -147,4 +148,16 @@ h1 {
 
 .moviesContent{
 	margin-left: 2em;
+}
+
+.searchNull{
+	width: 0px;
+}
+
+
+.similar{
+	color: #ddd;
+	font-size: 45px;
+	margin-left: 2em;
+	margin-top: 1em;
 }
