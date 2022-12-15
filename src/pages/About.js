@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, Outlet, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import '../styles/page.css';
 import LogoTMDB from "../images/Logo.svg";
 export function About() {
@@ -12,10 +12,10 @@ export function About() {
 					<Link className="navLink" to="/OutNow">Out Now</Link>
 					<Link className="navLink" to="/Upcomming">Upcomming</Link>
 				</div>
-				
+
 			</div>
 
-				Auteur du site : Enguerrand Beltran
+			Auteur du site : Enguerrand Beltran
 
 		</div>
 	);

@@ -1,13 +1,12 @@
-import logo from './logo.svg';
 import { About } from './pages/About';
 import { Home } from './pages/Home';
 import { MoviePage } from './pages/MoviePage';
 import { Upcomming } from './pages/Upcomming';
 import { OutNow } from './pages/OutNow';
-//import { Movie } from './composants/Movie';
 
 
-import { BrowserRouter, Routes, Route, Outlet, Link } from "react-router-dom";
+
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 
 

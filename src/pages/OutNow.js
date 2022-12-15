@@ -1,10 +1,7 @@
-import { BrowserRouter, Routes, Route, Outlet, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { MoviesOut } from "../composants/MoviesOut";
 import LogoTMDB from "../images/Logo.svg";
-import Form from 'react-bootstrap/Form';
-import FloatingLabel from 'react-bootstrap/FloatingLabel';
-import {Search} from '../composants/Search'
-import { useState } from "react";
+
 
 
 export function OutNow() {
@@ -16,7 +13,7 @@ export function OutNow() {
 				<Link className="navLink" to="/">Home</Link>
 				<Link className="navLink" to="/About">About</Link>
 				<Link className="navLink" to="/OutNow">Out Now</Link>
-				<Link className="navLink" to="/Upcomming">Upcomming</Link>	
+				<Link className="navLink" to="/Upcomming">Upcomming</Link>
 
 			</div >
 			<MoviesOut />
