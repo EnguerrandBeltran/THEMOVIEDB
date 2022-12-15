@@ -12,38 +12,26 @@ import ListGroup from 'react-bootstrap/Modal';
 
 const MovieCard = ({ movie }) => {
 
-  const [show, setShow] = useState(false);
-  const handleShow = () => setShow(true);
-  const handleClose = () => setShow(false);
-  const [selectedMovie, setSelectedMovie] = useState("");
-  function handleClick() {
-    setSelectedMovie(movie);
-    handleShow();
-    console.log(movie);
-  }
-
-  const movieId = movie.id;
-
-
-  const navigate = useNavigate();
-
-  const navigateToMovie = () => {
-    navigate("/MoviePage", { state: { movieId } });
-  }
+  var dateMovie = movie.release_date;
+  const dates = dateMovie.split('-');
 
 
 
-  return (
-    <div className="movie">
-      <img onMouseDown={navigateToMovie} className="poster" src={movie.poster_path
-        ? "https://image.tmdb.org/t/p/original/" + movie.poster_path
-        : "./img/poster.jpg"
-      }
-        alt={`affiche ${movie.title}`}
-      />
-
-
-    </div>
+return (
+<div><div className="movieCard">
+<div className="movieCardPosterContent">
+  			<img className="movieCardPoster" src={movie.poster_path
+				? "https://image.tmdb.org/t/p/original/" + movie.poster_path
+				: "./img/poster.jpg"
+			}
+				alt={`affiche ${movie.title}`}
+			/></div>
+      <div className="movieInfo">
+        <div className="movieTitre">{movie.title}</div>
+        <div className="movieTitreVO">Titre Original : {movie.original_title}</div>
+        <div className="movieDate">Date de sortie : {dates[2]}/{dates[1]}/{dates[0]}</div>
+        <div className="movieOverview">{movie.overview}</div>
+        </div></div></div>
   );
 
 }

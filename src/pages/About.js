@@ -14,9 +14,9 @@ export function About() {
 				</div>
 				
 			</div>
-			<div className="corps">
+
 				Auteur du site : Enguerrand Beltran
-			</div>
+
 		</div>
 	);
 }

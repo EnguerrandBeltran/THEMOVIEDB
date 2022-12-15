@@ -16,7 +16,7 @@ export function MoviePage() {
 	//console.log(state.movieId);
 
 	useEffect(() => {
-
+		console.log(state)
 			axios
 				.get('https://api.themoviedb.org/3/movie/' + state.movieId +'?api_key=ed82f4c18f2964e75117c2dc65e2161d&language=fr-FR')
 				.then((res) => {
@@ -25,7 +25,7 @@ export function MoviePage() {
 
 				})
 		
-	},movie)
+	},[])
 
 	//const location = useLocation();
 	//console.log(movie)
@@ -40,7 +40,9 @@ export function MoviePage() {
 				
 			</div>
 			<div className="corps">
+				{movie && 
 				<MovieCard movie={movie}/>
+				}
 			</div>
 		</div>
 	);

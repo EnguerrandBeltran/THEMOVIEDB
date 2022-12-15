@@ -70,9 +70,14 @@ h1 {
 .poster:hover {
 	transform: scale(1.3);
 	transition: 0.25s;
+	cursor: grab;
+	border-style: solid;
+	border-color: rgb(0, 206, 154);
+	border-width: 10px;
+	border-radius: 10%;
 }
 .movies {
-	display: flex;
+	display: inline-flex;
 	flex-flow: wrap;
 	padding-left: 35px;
 }
@@ -100,4 +105,46 @@ h1 {
 
 .searchBar.form-control{
 	border-radius: 100px;
+}
+
+.movieCard{
+	display: flex;
+	
+	
+}
+
+.movieCardPoster{
+	height:  100%;
+	overflow: hidden;
+}
+
+.movieCardPosterContent{
+	margin: 35px;
+	height: 42em;
+}
+
+.movieInfo{
+	width: 100%;
+	margin: 30px;
+}
+
+.movieTitre{
+	color: #ddd;
+	font-size: 75px;
+}
+.movieTitreVO{
+	color: #ddd;
+	margin-bottom: 1em;
+}
+.movieDate{
+	color: #ddd;
+	margin-bottom: 1em;
+}
+.movieOverview{
+	color: #ddd;
+	margin-bottom: 1em;
+}
+
+.moviesContent{
+	margin-left: 2em;
 }
